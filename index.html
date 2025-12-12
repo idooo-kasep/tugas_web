@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herbal Sehat - Produk Herbal Alami</title>
+
+  <!-- ANIMASI SCROLL (AOS) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f3ff; /* tema ungu lembut */
+      scroll-behavior: smooth;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: #5b3cc4; /* ungu tua */
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .logo { font-size: 22px; font-weight: bold; color: #fff; }
+    .nav-links { list-style: none; display: flex; }
+    .nav-links li { margin-left: 20px; }
+    .nav-links a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .nav-links a:hover { opacity: 0.7; }
+
+    /* HERO */
+    .hero {
+      height: 85vh;
+      background: url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #5b3cc4;
+      padding: 20px;
+    }
+    .hero h1 { font-size: 45px; margin-bottom: 10px; }
+    .hero p { font-size: 18px; margin-bottom: 20px; }
+    .btn-primary {
+      background: #5b3cc4;
+      padding: 12px 22px;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn-primary:hover { background: #45289b; }
+
+    section { padding: 60px 40px; }
+
+    /* PRODUK */
+    .produk-title { font-size: 30px; margin-bottom: 20px; color: #45289b; }
+    .produk-container { display: flex; gap: 25px; flex-wrap: wrap; }
+    .produk-card {
+      width: 30%; background: #fff; padding: 20px; border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+      border-top: 5px solid #5b3cc4;
+    }
+    .produk-card:hover { transform: scale(1.05); }
+    .produk-card img {
+      width: 100%; border-radius: 8px; margin-bottom: 10px;
+    }
+
+    /* TENTANG */
+    .tentang { background: #ede7ff; }
+    .tentang h2 { color: #45289b; }
+
+    /* KONTAK */
+    .kontak { background: #fff; }
+    .form-kontak { max-width: 450px; margin: auto; }
+    .form-kontak input, .form-kontak textarea {
+      width: 100%; padding: 12px; margin-bottom: 15px;
+      border: 1px solid #aaa; border-radius: 5px;
+    }
+    .form-kontak button {
+      width: 100%; padding: 12px; background: #5b3cc4; color: #fff;
+      border: none; border-radius: 5px; font-size: 16px; cursor: pointer;
+    }
+    .form-kontak button:hover { background: #45289b; }
+
+    footer {
+      text-align: center; padding: 20px;
+      background: #5b3cc4; color: #fff;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">My Herbal</div>
+    <ul class="nav-links">
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#produk">Produk</a></li>
+      <li><a href="#layanan">Layanan</a></li>
+      <li><a href="#testimoni">Testimoni</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="beranda" data-aos="fade-up">
+    <h1>Produk Herbal Alami untuk Kesehatan</h1>
+    <p>Meningkatkan imun dan kesehatan secara alami.</p>
+    <a href="#produk" class="btn-primary">Lihat Produk</a>
+  </section>
+
+  <!-- PRODUK -->
+  <section id="produk" data-aos="fade-up">
+    <h2 class="produk-title">Daftar Produk Herbal</h2>
+
+    <div class="produk-container">
+
+      <div class="produk-card" data-aos="zoom-in">
+        <img src="tehjahe.webp" alt="Teh Jahe Merah">
+        <h3>Teh Jahe Merah</h3>
+        <p>untuk menghangatkan tubuh serta meningkatkan stamina dan kekebalan tubuh. Manfaatnya yang lain termasuk membantu meredakan nyeri, mengatasi masuk angin, dan melancarkan pencernaan.</p>
+      </div>
+
+      <div class="produk-card" data-aos="zoom-in" data-aos-delay="150">
+        <img src="maduherbal.jpeg" alt="Madu Herbal">
+        <h3>Madu Herbal</h3>
+        <p>Meningkatkan stamina, energi, dan kekebalan tubuh.</p>
+      </div>
+
+      <div class="produk-card" data-aos="zoom-in" data-aos-delay="300">
+        <img src="daunkelor.jpg" alt="Daun Kelor">
+        <h3>Kapsul Daun Kelor</h3>
+        <p>kaya vitamin, mineral, antioksidan, dan asam amino, berfungsi sebagai nutrisi super untuk meningkatkan daya tahan tubuh, membantu menurunkan kolesterol, gula darah, tekanan darah.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section id="tentang" class="tentang" data-aos="fade-up">
+    <h2>Tentang Kami</h2>
+    <p>
+      My Herbal adalah brand lokal yang berfokus pada kandungan alami, keamanan, khasiat yang terbukti secara ilmiah atau melalui pengalaman turun-temurun, serta kepercayaan konsumen
+    </p>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak" class="kontak" data-aos="fade-up">
+    <h2>Hubungi Kami</h2>
+    <div class="form-kontak">
+      <input type="text" placeholder="Nama" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="5" placeholder="Pesan Anda" required></textarea>
+      <button>Kirim Pesan</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 My Herbal. Semua Berhak Hidup Sehat.</p>
+  </footer>
+
+  <!-- AOS ANIMATION SCRIPT -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+
+  <!-- Halaman Layanan -->
+  <section id="layanan" class="section-padding" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">Layanan Kami</h2>
+      <p class="text-center mb-5">Kami menyediakan berbagai layanan pendukung kesehatan herbal untuk memastikan pelanggan mendapatkan manfaat terbaik.</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 p-4 shadow-sm">
+            <h4>-Konsultasi Herbal</h4>
+            <p>Dapatkan saran penggunaan herbal sesuai kebutuhan Anda dari ahli herbal berpengalaman.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 shadow-sm">
+            <h4>-Custom Racikan</h4>
+            <p>Kami menyediakan racikan herbal khusus yang disesuaikan dengan kondisi dan kebutuhan pelanggan.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 p-4 shadow-sm">
+            <h4>-Pengiriman Cepat</h4>
+            <p>Pengiriman ke seluruh Indonesia dengan proses cepat dan aman.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Halaman Testimoni -->
+  <section id="testimoni" class="section-padding bg-light" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-4">Testimoni Pelanggan</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm h-100">
+            <p>“Produk herbalnya sangat membantu meningkatkan stamina. Pelayanan cepat dan terpercaya.”</p>
+            <strong>- Huda, Cikampek</strong>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm h-100">
+            <p>“Saya rutin konsumsi kapsul herbal, hasilnya sangat terasa. Recommended!”</p>
+            <strong>- Alfan, Probolinggo</strong>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card p-4 shadow-sm h-100">
+            <p>“Tim sangat profesional dan konsultasinya membantu memilih produk yang tepat.”</p>
+            <strong>- Yafi, Kediri</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+</html>
